@@ -16,5 +16,6 @@ Thumbs.db
 desktop.ini
 
 .gitignore
-.cph
+.cph/
+
 
