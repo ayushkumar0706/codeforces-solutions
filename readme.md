@@ -12,7 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
-| 2025-07-30 | 188 | Advance Number Theory |
+| 2025-07-30 | 4 | Advance Number Theory |
 | 2025-07-29 | 186 | Number theory |
 | ...        | ...              | ...                |
 

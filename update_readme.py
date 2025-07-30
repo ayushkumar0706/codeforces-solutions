@@ -1,19 +1,23 @@
 import os
 from datetime import datetime
 
-folder = "."  # root folder
+folder = "."  # Root folder
 
-# Count all .cpp files in the project
-cpp_files = []
+cpp_files_today = []
+today = datetime.now().date()
+
+# Walk through all files and check .cpp files modified today
 for root, _, files in os.walk(folder):
     for file in files:
         if file.endswith(".cpp"):
-            cpp_files.append(os.path.join(root, file))
+            full_path = os.path.join(root, file)
+            modified_time = datetime.fromtimestamp(os.path.getmtime(full_path)).date()
+            if modified_time == today:
+                cpp_files_today.append(full_path)
 
-problem_count = len(cpp_files)
-today = datetime.now().strftime("%Y-%m-%d")
+problem_count = len(cpp_files_today)
 
-# Prompt user to enter a note (e.g. topics focused on)
+# Prompt user to enter a note
 notes = input("📝 Enter today's topics or notes (e.g., Greedy, DP): ")
 
 new_line = f"| {today} | {problem_count} | {notes} |\n"
@@ -44,11 +48,10 @@ for i in range(progress_start, len(lines)):
         lines[i] = new_line
         break
 else:
-    # If today's entry doesn't exist, insert a new line
     lines.insert(progress_start, new_line)
 
 # Save the updated README.md
 with open(readme_path, "w", encoding="utf-8") as f:
     f.writelines(lines)
 
-print(f"✅ README updated with today's progress: {problem_count} problems and notes: {notes}")
+print(f"✅ README updated: {problem_count} problem(s) solved today.")
