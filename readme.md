@@ -12,7 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
-| 2025-08-08 | 0 | Advance Number Theory |
+| 2025-08-08 | 2 | Number Theory |
 | 2025-08-05 | 1 |  |
 | 2025-08-02 | 5 | Advance Number Theory |
 | 2025-08-01 | 3 | Codeforces Round 1040 (Div. 2) |
