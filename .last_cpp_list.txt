@@ -1,0 +1,2 @@
+.\A_Nastia_and_Nearly_Good_Numbers.cpp
+.\C_Fadi_and_LCM.cpp

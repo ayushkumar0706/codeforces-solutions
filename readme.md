@@ -12,13 +12,13 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2025-08-10 | 2 | Advance Number Theory |
 | 2025-08-08 | 4 | Advance Number Theory |
-| 2025-08-05 | 1 |  |
 | 2025-08-02 | 5 | Advance Number Theory |
 | 2025-08-01 | 3 | Codeforces Round 1040 (Div. 2) |
 | 2025-07-31 | 3 | Advance Number Theory |
 | 2025-07-30 | 4 | Advance Number Theory |
-| 2025-07-29 | 186 | Number theory |
+| 2025-07-29 | 186 | Problems solved till today |
 | ...        | ...              | ...                |
 
 ## 🛠 Languages Used

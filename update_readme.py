@@ -2,6 +2,8 @@ import os
 from datetime import datetime
 
 folder = "."  # Root folder
+readme_path = "README.md"
+last_run_file = ".last_cpp_list.txt"  # Stores the file list from last run
 
 cpp_files_today = []
 today = datetime.now().date()
@@ -15,19 +17,30 @@ for root, _, files in os.walk(folder):
             if modified_time == today:
                 cpp_files_today.append(full_path)
 
-problem_count = len(cpp_files_today)
+# Load previously tracked files
+if os.path.exists(last_run_file):
+    with open(last_run_file, "r", encoding="utf-8") as f:
+        old_files = set(f.read().splitlines())
+else:
+    old_files = set()
+
+# Find new files since last run
+new_files = [f for f in cpp_files_today if f not in old_files]
+problem_count = len(new_files)
+
+if problem_count == 0:
+    print("📭 No new problems found since last update.")
+    exit()
 
 # Prompt user to enter a note
 notes = input("📝 Enter today's topics or notes (e.g., Greedy, DP): ")
-
 new_line = f"| {today} | {problem_count} | {notes} |\n"
 
-readme_path = "README.md"
+# Read the current README.md content
 if not os.path.exists(readme_path):
     print("README.md not found!")
     exit()
 
-# Read the current README.md content
 with open(readme_path, "r", encoding="utf-8") as f:
     lines = f.readlines()
 
@@ -42,16 +55,15 @@ if progress_start is None:
     print("⚠️ Progress table not found in README.md")
     exit()
 
-# Check if today's date already exists, and update that line
-for i in range(progress_start, len(lines)):
-    if lines[i].startswith(f"| {today}"):
-        lines[i] = new_line
-        break
-else:
-    lines.insert(progress_start, new_line)
+# Append the new line always (no overwrite)
+lines.insert(progress_start, new_line)
 
-# Save the updated README.md
+# Save updated README.md
 with open(readme_path, "w", encoding="utf-8") as f:
     f.writelines(lines)
 
-print(f"✅ README updated: {problem_count} problem(s) solved today.")
+# Save the new state of solved files
+with open(last_run_file, "w", encoding="utf-8") as f:
+    f.write("\n".join(cpp_files_today))
+
+print(f"✅ README updated: {problem_count} new problem(s) solved today.")
