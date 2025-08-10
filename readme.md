@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2025-08-10 | 4 | Codeforces Round 1042 (Div. 3) |
 | 2025-08-10 | 2 | Advance Number Theory |
 | 2025-08-08 | 4 | Advance Number Theory |
 | 2025-08-02 | 5 | Advance Number Theory |
@@ -28,9 +29,9 @@ It's part of my daily problem-solving practice and competitive programming journ
 ## 📚 Topics Covered
 
 - Greedy
-- Number Theory
 - Sorting
 - Prefix sums
+- Number Theory
 - Binary search
 - Combinatronics
 - DP (coming soon)
