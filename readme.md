@@ -32,6 +32,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 - Sorting
 - Prefix sums
 - Binary search
+- Combinatronics
 - DP (coming soon)
 
 ## 🤝 Contributions
