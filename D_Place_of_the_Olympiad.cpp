@@ -5,27 +5,16 @@ int main()
 int t;
 cin>>t;
 while(t--){
-long n,m,k;
+long long n,m,k;
 cin>>n>>m>>k;
 
-long cnt=k/n;
-if(k%n!=0)
-cnt++;
+long long len = k / n + (k%n != 0);
 
-if(cnt>=m){
-    cout<<m<<endl;
-    continue;
-}
+long long space = m - len;
 
-if(m-cnt>=m/2){
-    cout<<"1"<<endl;
-    continue;
-}
-else{
-    
-}
+long long ans = (len) / (space + 1) + ((len % (space + 1)) != 0);
 
-
+cout<<ans<<endl;
     
 }
 }
