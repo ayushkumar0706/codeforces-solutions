@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2025-08-22 | 2 | Codeforces Round 1043 (Div. 3)(Practise) |
 | 2025-08-15 | 2 | Binary Search |
 | 2025-08-13 | 3 | Binary Search |
 | 2025-08-10 | 4 | Codeforces Round 1042 (Div. 3) |
