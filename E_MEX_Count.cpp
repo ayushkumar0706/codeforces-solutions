@@ -5,45 +5,34 @@ int main()
 int t;
 cin>>t;
 while(t--){
-long n;
+int n;
 cin>>n;
-vector<long>arr(n);
-unordered_map<int, int>mp;
-for(int i=0;i<n;i++){
+vector<int>arr(n);
+map<int, int>mp;
+for(int i=0; i<n; i++){
     cin>>arr[i];
     mp[arr[i]]++;
 }
 
-long extra = 0;
-for(auto it: mp){
-    extra += (it.second);
+map<int, int>freq;
+int mex = 0;
+for(auto &[x, y] : mp){
+    if(x == mex)
+    mex++;
+    else break;
+
+    freq[y]++;
 }
 
-vector<long>ans(n+1, 1);
-vector<long>value(n, 0);
-
-for(int i=0; i<n; i++){
-    if(arr[i] < n)
-    value[arr[i]]++;
+vector<int>ans(n+1, 0);
+ans[0] = 1, ans[n] = 1;
+for(int i=n-1; i>n - mex; i--){
+    ans[i] = ans[i+1] + 1;
 }
 
 for(int i=1; i<n; i++){
-    long cnt = 0;
-    for(int j=0; j<n; j++){
-        if(value[j] == 0){
-            if(extra - i >= j)
-            cnt++;
-            break;
-        }
-
-        if(value[j] <= i){
-            if(extra - i >= j)
-            cnt++;
-            else break;
-        }
-    }
-
-    ans[i] = cnt;
+    if(ans[i]) break;
+    ans[i] = ans[i-1] + freq[i];
 }
 
 for(int i=0; i<=n; i++){
