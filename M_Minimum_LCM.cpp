@@ -8,12 +8,19 @@ while(t--){
 long long n;
 cin>>n;
 
-long long fir = n/2, sec =  (n + 1) / 2;
-while(sec % fir !=0 && sec < n){
-    fir--;
-    sec++;
+if(n%2 == 0){
+    cout<<n/2<<" "<<n/2<<endl;
+    continue;
 }
 
+long long fir = 1, sec = n-1;
+for(long i = 2; i*i<=n; i++){
+    if(n%i == 0){
+        fir = n/i;
+        sec = n-fir;
+        break;
+    }
+}
 cout<<fir<<" "<<sec<<endl;
 }
 }

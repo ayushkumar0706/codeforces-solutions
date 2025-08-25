@@ -7,22 +7,23 @@ cin.tie(NULL);
 long long t;
 cin>>t;
 while(t--){
-long long a, b, x, y;
-cin>>a>>b>>x>>y;
-
+long long n;
+cin>>n;
+vector<long long>arr(n);
+for(int i=0;i<n;i++){
+cin>>arr[i];
+}
+sort(arr.begin(), arr.end());
 long long ans = 0;
-while(a != b){
-    if(a < b){
-        if(x <= y)
-        a++;
-        else{
-
-        }
-    }
-    else if(a > b){
-
+for(int i=0; i<n-1; i++){
+    if(arr[i] == arr[i+1]){
+        ans = 1;
+        break;
     }
 }
-    
+if(ans)
+cout<<"YES"<<endl;
+else
+cout<<"NO"<<endl;
 }
 }
