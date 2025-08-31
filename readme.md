@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2025-08-30 | 5 | solve CP-31 sheet |
 | 2025-08-29 | 2 | Codeforces Round 1046 (Div. 2) |
 | 2025-08-28 | 4 | Practise CP-31 sheet |
 | 2025-08-27 | 1 | Codeforces Round 1045 (Div. 2)(second qus) |
