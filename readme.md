@@ -12,7 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
-| 2025-09-03 | 7 | solve CP-31 sheet (rating - 1200) |
+| 2025-09-03 | 7 | Solve CP-31 sheet (rating - 1200) |
 | 2025-09-02 | 8 | Solve CP-31 sheet (rating - 1200) |
 | 2025-09-01 | 5 | Solve CP-31 sheet (rating - 1200) |
 | 2025-08-31 | 6 | Solve CP-31 sheet (rating - 1200) |
