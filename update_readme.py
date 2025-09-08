@@ -41,18 +41,17 @@ if progress_start is None:
     print("⚠️ Progress table not found in README.md")
     exit()
 
-# Get the last recorded count for today (if any)
-last_count_for_today = 0
+# Calculate how many problems have already been counted today
+counted_today = 0
 for i in range(progress_start, len(lines)):
     if lines[i].startswith(f"| {today}"):
         try:
-            last_count_for_today = int(lines[i].split("|")[2].strip())
+            counted_today += int(lines[i].split("|")[2].strip())
         except ValueError:
-            last_count_for_today = 0
-        break
+            pass
 
 # Calculate new problems since last update
-new_problems = total_today - last_count_for_today
+new_problems = total_today - counted_today
 
 if new_problems <= 0:
     print("📭 No new problems since last update.")
