@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2025-09-15 | 3 | Educational Codeforces Round 182 (Rated for Div. 2) |
 | 2025-09-13 | 5 | Codeforces Round 1050 (Div. 4) |
 | 2025-09-12 | 2 | Solve CP-31 sheet (rating - 1400) |
 | 2025-09-09 | 2 | Codeforces Round 1049 (Div. 2) |
