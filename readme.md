@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2025-10-05 | 2 | Codeforces Round 1056 (Div. 2) |
 | 2025-09-18 | 5 | Solve Qus based on Dynamic Programming |
 | 2025-09-15 | 3 | Educational Codeforces Round 182 (Rated for Div. 2) |
 | 2025-09-13 | 5 | Codeforces Round 1050 (Div. 4) |
