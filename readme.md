@@ -12,6 +12,9 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2025-10-08 | 4 | Solve CSES problem set(Graph) |
+| 2025-10-07 | 2 | Solve CSES Graph problem set |
+| 2025-10-06 | 2 | Solve CP-31 sheet (rating - 1400) |
 | 2025-10-05 | 2 | Codeforces Round 1056 (Div. 2) |
 | 2025-09-18 | 5 | Solve Qus based on Dynamic Programming |
 | 2025-09-15 | 3 | Educational Codeforces Round 182 (Rated for Div. 2) |
