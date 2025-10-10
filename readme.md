@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2025-10-09 | 2 | Solve CSES & SPOJ problem set(Graph) |
 | 2025-10-08 | 4 | Solve CSES problem set(Graph) |
 | 2025-10-07 | 2 | Solve CSES Graph problem set |
 | 2025-10-06 | 2 | Solve CP-31 sheet (rating - 1400) |
