@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2025-11-3 | 8 | Some of Graph problems on different platforms |
 | 2025-10-30 | .. | Some of the problems from past codeforces contests |
 | 2025-10-12 | 3 | Codeforces Round 1057 (Div. 2) |
 | 2025-10-10 | 3 | Codeforces Round 1057 (Div. 2) |
