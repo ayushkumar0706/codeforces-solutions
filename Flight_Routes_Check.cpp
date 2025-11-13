@@ -15,7 +15,7 @@ void dfs(int curr, vector<vector<int>> &edges, vector<int> &vist, stack<int> &st
 void dfs2(int curr, vector<vector<int>> &edges, vector<int> &vist, int &cnt){
     vist[curr] = cnt;
     for(int e: edges[curr]){
-        if(vist[e] == 0){
+        if(vist[e] == -1){
             dfs2(e, edges, vist, cnt);
         }
     }
@@ -26,19 +26,12 @@ signed main()
 ios_base::sync_with_stdio(false); cin.tie(0);
 int n, m;
 cin>>n>>m;
-vector<int>arr(n);
-for(int i=0; i<n; i++){
-    cin>>arr[i];
-}
-
 vector<vector<int>>edges(n, vector<int>());
 vector<vector<int>>adj(n, vector<int>());
-vector<pair<int, int>>vec;
 for(int i=0; i<m; i++){
     int u, v;
     cin>>u>>v;
     u--;v--;
-    vec.push_back({u, v});
     edges[u].push_back(v);
     adj[v].push_back(u);
 }
@@ -50,52 +43,28 @@ for(int i=0; i<n; i++){
     dfs(i, edges, visited, st);
 }
 
-fill(visited.begin(), visited.end(), 0);
+fill(visited.begin(), visited.end(), -1);
 
-int cnt = 1;
+int cnt = 0;
+int curr = st.top();
 while(!st.empty()){
     int node = st.top();
     st.pop();
-    if(visited[node] == 0){
+    if(visited[node] == -1){
         dfs2(node, adj, visited, cnt);
         cnt++;
     }
 }
 
-vector<int>comp = visited;
-vector<vector<int>>edge(cnt-1, vector<int>());
-vector<int>vist(cnt-1, 0);
-vector<int>coin(cnt-1, 0);
-
+cnt = visited[curr];
 for(int i=0; i<n; i++){
-    coin[comp[i]-1] += arr[i];
-}
-
-for(int i=0; i<m; i++){
-    int u = vec[i].first;
-    int v = vec[i].second;
-    if(comp[u] != comp[v]){
-        edge[comp[u]-1].push_back(comp[v]-1);
+    if(visited[i] != cnt){
+        cout<<"NO"<<endl;
+        cout<<i+1<<" "<<curr+1<<endl;
+        return 0;
     }
 }
 
-vector<int> dp(cnt-1, -1);
-
-function<int(int)> solve = [&](int u) {
-    if (dp[u] != -1) return dp[u];
-    int best = 0;
-    for (int v : edge[u]) {
-        best = max(best, solve(v));
-    }
-    return dp[u] = coin[u] + best;
-};
-
-int ans = 0;
-for (int i = 0; i < cnt-1; i++) {
-    ans = max(ans, solve(i));
-}
-
-cout << ans << endl;
-
+cout<<"YES"<<endl;
 
 }

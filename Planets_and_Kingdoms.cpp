@@ -26,19 +26,12 @@ signed main()
 ios_base::sync_with_stdio(false); cin.tie(0);
 int n, m;
 cin>>n>>m;
-vector<int>arr(n);
-for(int i=0; i<n; i++){
-    cin>>arr[i];
-}
-
 vector<vector<int>>edges(n, vector<int>());
 vector<vector<int>>adj(n, vector<int>());
-vector<pair<int, int>>vec;
 for(int i=0; i<m; i++){
     int u, v;
     cin>>u>>v;
     u--;v--;
-    vec.push_back({u, v});
     edges[u].push_back(v);
     adj[v].push_back(u);
 }
@@ -62,40 +55,11 @@ while(!st.empty()){
     }
 }
 
-vector<int>comp = visited;
-vector<vector<int>>edge(cnt-1, vector<int>());
-vector<int>vist(cnt-1, 0);
-vector<int>coin(cnt-1, 0);
-
+cout<<cnt-1<<endl;
 for(int i=0; i<n; i++){
-    coin[comp[i]-1] += arr[i];
+    cout<<visited[i]<<" ";
 }
 
-for(int i=0; i<m; i++){
-    int u = vec[i].first;
-    int v = vec[i].second;
-    if(comp[u] != comp[v]){
-        edge[comp[u]-1].push_back(comp[v]-1);
-    }
-}
-
-vector<int> dp(cnt-1, -1);
-
-function<int(int)> solve = [&](int u) {
-    if (dp[u] != -1) return dp[u];
-    int best = 0;
-    for (int v : edge[u]) {
-        best = max(best, solve(v));
-    }
-    return dp[u] = coin[u] + best;
-};
-
-int ans = 0;
-for (int i = 0; i < cnt-1; i++) {
-    ans = max(ans, solve(i));
-}
-
-cout << ans << endl;
-
+cout<<endl;
 
 }

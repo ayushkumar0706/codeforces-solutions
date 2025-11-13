@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2025-11-13 | 5 | Solve CSES Graph Problem set |
 | 2025-11-12 | 2 | Solve CSES Graph Problem set |
 | 2025-11-11 | 5 | Practice problems from CSES Graph set |
 | 2025-11-10 | 3 | Codeforces Round 1063 (Div. 2) |
