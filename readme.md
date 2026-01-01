@@ -12,7 +12,11 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
-| 2025-12-011 | 2 | Codeforces Round 1070 (Div. 2) |
+| 2026-01-01 | 11 | Solve CSES Sorting and Searching Problem set |
+
+                        HAPPY NEW YEAR
+
+| 2025-12-11 | 2 | Codeforces Round 1070 (Div. 2) |
 | 2025-12-07 | 3 | Practise problems - Codeforces Round 1069 (Div. 2) |
 | 2025-12-05 | 3 | Practise problems - Codeforces Round 1068 (Div. 2) |
 | 2025-11-28 | 3 | Educational Codeforces Round 185 (Rated for Div. 2) |
