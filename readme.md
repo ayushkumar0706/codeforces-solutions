@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2026-01-02 | 5 | Solve CSES Sorting and Searching problem set |
 | 2026-01-01 | 11 | Solve CSES Sorting and Searching Problem set |
 | 2025-12-11 | 2 | Codeforces Round 1070 (Div. 2) |
 | 2025-12-07 | 3 | Practise problems - Codeforces Round 1069 (Div. 2) |
@@ -91,7 +92,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 - Number Theory
 - Binary search
 - Combinatronics
-- DP (coming soon)
+- Dynamic Programming
 
 ## 🤝 Contributions
 
