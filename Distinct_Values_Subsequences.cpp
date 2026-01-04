@@ -10,12 +10,17 @@ int n;
 cin>>n;
 vector<int>arr(n);
 map<int, int>mp;
-int ans = 0;
+int ans = 1;
 for(int i=0;i<n;i++){
 cin>>arr[i];
-mp[arr[i]]++;`
+mp[arr[i]]++;
 }
 
-cout<<ans<<endl;
+for(auto it: mp){
+    int cnt = it.second + 1;
+    ans = (ans * cnt)%mod;
+}
+
+cout<<ans-1<<endl;
 
 }

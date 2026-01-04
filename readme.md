@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2026-01-04 | 6 | Solve Sorting and Searching CSES Problem set |
 | 2026-01-03 | 3 | Solve Sorting and Searching CSES Problem set |
 | 2026-01-02 | 5 | Solve CSES Sorting and Searching problem set |
 | 2026-01-01 | 11 | Solve CSES Sorting and Searching Problem set |
