@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2026-01-23 | 07 | Solve CSES Sliding Window Problem set |
 | 2026-01-21 | 04 | Solve CSES Dynamic Programming set |
 | 2026-01-20 | 03 | Solve CSES Dynamic Programming set |
 | 2026-01-19 | 03 | Solve CSES Dynamic Programming set |
