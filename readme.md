@@ -12,6 +12,7 @@ It's part of my daily problem-solving practice and competitive programming journ
 
 | Date       | Problems Solved | Notes              |
 |------------|------------------|--------------------|
+| 2026-01-25 | 02 | Solve POTD by MyCpTrainer |
 | 2026-01-25 | 02 | Solve CSES Sliding Window Problem set |
 | 2026-01-24 | 03 | Solve CSES Sliding Window Problem set |
 | 2026-01-23 | 04 | Solve CSES Sliding Window Problem set |
